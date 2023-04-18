@@ -13,13 +13,17 @@ import { StyleSheet } from "react-native-web";
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'skyblue',
+        backgroundColor: '#f8f9fa',
         alignItems: 'center',
         justifyContent: 'center'
     },
     buttonBox: {
-        flexDirection: 'row',
+        backgroundColor: '#ff0',
         width: '100%'
+    },
+    button: {
+        border: '1px solid black',
+        width: '50%'
     },
     component: {
         flex: 1

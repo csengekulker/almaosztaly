@@ -12,7 +12,7 @@ import { StyleSheet } from "react-native-web";
 
 export const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        // flex: 1,
         justifyContent: 'center',
         textAlign: 'center'
     },
@@ -25,21 +25,27 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     body: {
-        flex: 1,
+        // flex: 1,
         backgroundColor: '#f8f9fa',
         alignItems: 'center',
         justifyContent: 'center',
     },
     button: {
-        display: 'inline',
         padding: 10,
+        backgroundColor: '#48b890',
         borderRadius: 10,
         marginBottom: 5,
         marginTop: 5,
         border: 'solid 1px black'
     },
-    submit: { backgroundColor: '#48b890' },
-    reset: { backgroundColor: '#708a80' },
+    result: {
+        fontSize: 24 
+    },
+    divider: {
+        backgroundColor: 'black',
+        height: 1,
+        width: '100%'
+    },
     input: {
         border: 'solid 1px black',
         height: 44,

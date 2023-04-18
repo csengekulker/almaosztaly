@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableHighlight, TextInput } from 'react-native';
+import { styles } from '../App.style';
 import{ styles as ss} from './styles'
 
 export default function Apple() {
@@ -9,9 +10,7 @@ export default function Apple() {
     
         let firstPercent = 100 * first / cent
         let secondPercent = 100 * second / cent
-    
-        console.log(cent)
-    
+        
         setFirstPercent(firstPercent)
         setSecondPercent(secondPercent)
     
@@ -49,10 +48,12 @@ export default function Apple() {
       <TouchableHighlight onPress={submit} value='Submit' style={[ss.submit, ss.button]}>
         <Text>Submit</Text>
       </TouchableHighlight>
+      <hr style={ss.divider}/>
 
-      <Text>Első osztály {firstPercent}%</Text>
+      <Text style={ss.result}>Megoszlás</Text>
 
-      <Text>Másodosztály {secondPercent}%</Text>
+      <Text>Első osztály: {firstPercent}%</Text>
+      <Text>Másodosztály: {secondPercent}%</Text>
 
     </View>
   </View>

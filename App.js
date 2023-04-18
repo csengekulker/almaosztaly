@@ -35,9 +35,9 @@ export default function App() {
   return (
     <View style={styles.container}>
         <View style={styles.buttonBox}>
-          <Button onPress={() => setTab('A')} title='A' />
-          <Button onPress={() => setTab('B')} title='B' 
-            color='blue'
+          <Button style={styles.button} onPress={() => setTab('A')} title='Apple' />
+          <Button style={styles.button} onPress={() => setTab('B')} title='About' 
+            color='#2b9777'
           />
           </View>
           <View style={styles.component}>
